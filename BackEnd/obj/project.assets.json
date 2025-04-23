@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web dev\\Projects\\Testing\\BackEnd\\BackEnd.csproj",
+      "projectUniqueName": "D:\\Web dev\\Projects\\Testing\\TestingAPI\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "D:\\Web dev\\Projects\\Testing\\BackEnd\\BackEnd.csproj",
+      "projectPath": "D:\\Web dev\\Projects\\Testing\\TestingAPI\\BackEnd\\BackEnd.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\Web dev\\Projects\\Testing\\BackEnd\\obj\\",
+      "outputPath": "D:\\Web dev\\Projects\\Testing\\TestingAPI\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

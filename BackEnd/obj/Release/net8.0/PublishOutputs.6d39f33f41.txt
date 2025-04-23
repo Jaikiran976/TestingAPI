@@ -1,0 +1,11 @@
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\BackEnd.exe
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\appsettings.Development.json
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\appsettings.json
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\BackEnd.dll
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\BackEnd.deps.json
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\BackEnd.runtimeconfig.json
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\BackEnd.pdb
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\Microsoft.OpenApi.dll
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Web dev\Projects\Testing\TestingAPI\BackEnd\out\Swashbuckle.AspNetCore.SwaggerUI.dll
