@@ -26,10 +26,10 @@ app.UseAuthorization();
 // Map controllers (API routes)
 app.MapControllers();
 
-// Fallback to port 5000 for local development
+// Set up the port to bind to dynamically (for Render) or fallback to 5000 for local dev
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";  // Render provides dynamic PORT, fallback to 5000 for local dev
 
-// Listen on the dynamic or fallback port
-app.Listen($"http://0.0.0.0:{port}");  // Bind to all network interfaces on the specified port
+// Configure the server to listen on the dynamic port
+app.UseUrls($"http://0.0.0.0:{port}");  // Bind to all network interfaces on the specified port
 
 app.Run();
