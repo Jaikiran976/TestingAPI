@@ -2,15 +2,11 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy solution and project files
-COPY BackEnd.sln ./
-COPY BackEnd/ ./BackEnd/
+# Copy everything in the current folder (your project)
+COPY . .
 
-# Restore dependencies
-RUN dotnet restore BackEnd/BackEnd.csproj
-
-# Publish the app
-RUN dotnet publish BackEnd/BackEnd.csproj -c Release -o /app/publish
+RUN dotnet restore BackEnd.csproj
+RUN dotnet publish BackEnd.csproj -c Release -o /app/publish
 
 # Stage 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
@@ -18,8 +14,9 @@ WORKDIR /app
 
 COPY --from=build /app/publish .
 
-# This lets Render know to listen on the right port
+# Allow Render to use dynamic port
 ENV ASPNETCORE_URLS=http://+:${PORT}
 
 ENTRYPOINT ["dotnet", "BackEnd.dll"]
+
 
