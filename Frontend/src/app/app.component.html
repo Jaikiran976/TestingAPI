@@ -1,0 +1,9 @@
+@for (item of weatherlist; track $index) {
+  <div style="padding: 20px;"> 
+    <div>{{item.date}}</div>
+    <div>{{item.temperatureC}}</div>
+    <div>{{item.temperatureF}}</div>
+    <div>{{item.summary}}</div>
+  </div>
+}
+<router-outlet />
