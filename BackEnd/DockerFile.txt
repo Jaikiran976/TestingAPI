@@ -15,7 +15,7 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 # Allow Render to use dynamic port
-ENV ASPNETCORE_URLS=http://+:${PORT}
+ENV ASPNETCORE_URLS=http://
 
 ENTRYPOINT ["dotnet", "BackEnd.dll"]
 
