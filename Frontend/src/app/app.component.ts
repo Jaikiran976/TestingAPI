@@ -25,6 +25,6 @@ export class AppComponent {
   }
 
   getList():Observable<WeatherForecast[]>{
-    return this.http.get<WeatherForecast[]>('https://localhost:7259/WeatherForecast');
+    return this.http.get<WeatherForecast[]>('https://testingapi-akm0.onrender.com/WeatherForecast');
   }
 }
